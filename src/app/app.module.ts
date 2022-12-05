@@ -7,6 +7,10 @@ import { AgregarUsuarioComponent } from './Components/agregar-usuario/agregar-us
 import { ListarUsuarioComponent } from './Components/listar-usuario/listar-usuario.component';
 import { VerUsuarioComponent } from './Components/ver-usuario/ver-usuario.component';
 
+//modulos angular
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatTableModule} from '@angular/material/table';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +20,9 @@ import { VerUsuarioComponent } from './Components/ver-usuario/ver-usuario.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatSlideToggleModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
